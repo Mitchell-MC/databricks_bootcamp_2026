@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(find:*)",
+      "Bash(wc:*)",
+      "Bash(uv sync:*)",
+      "Bash(python -m venv:*)",
+      "Bash(.venv/Scripts/pip install:*)",
+      "Bash(.venv/Scripts/pytest src/github_lakehouse/ -v)",
+      "Bash(.venv/Scripts/ruff check src/github_lakehouse/)",
+      "Bash(.venv/Scripts/ruff check src/github_lakehouse/ --fix)",
+      "Bash(.venv/Scripts/pytest src/github_lakehouse/ -v --tb=short)",
+      "Bash(.venv/Scripts/databricks configure:*)",
+      "Bash(dir /s /b \"c:\\\\Users\\\\mccal\\\\Downloads\\\\Databricks_course\\\\databricks_bootcamp_2026\")",
+      "Bash(findstr:*)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\mccal\\\\Downloads\\\\Databricks_course\" -Recurse -File -Depth 2)",
+      "Bash(Where-Object { $_Name -notmatch \"^\\\\.\" -and $_DirectoryName -notmatch \"\\\\.venv|node_modules|__pycache__|\\\\.git\" })",
+      "Bash(Select-Object -First 50 FullName)",
+      "Bash(git -C \"c:/Users/mccal/Downloads/Databricks_course/databricks_bootcamp_2026\" status --short)",
+      "Bash(git -C \"c:/Users/mccal/Downloads/Databricks_course/databricks_bootcamp_2026\" diff --stat HEAD)"
+    ]
+  }
+}
